@@ -13,17 +13,8 @@ const resolvers = {
             deleted: false
         }
     },
-    user: () => {
-        return {
-            firstName: 'Jane',
-            lastName: 'Doe',
-            emails: [{
-                email: 'jane@gmail.com'
-            },
-            {
-                email: 'jane@yahoo.com'
-            }]
-        }
+    getUser: ({id}) => {
+        return users.find(user => user.id ===id);
     },
     users: () => {
         return users
@@ -36,3 +27,11 @@ const resolvers = {
 }
 
 export default resolvers;
+
+
+// query getUser{
+//     getUser(id: "12232312") {
+//       firstName
+//       lastName
+//     }
+//   }
