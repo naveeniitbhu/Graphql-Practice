@@ -6,3 +6,5 @@
 - Add "type": "module" to load an ES5 module or
 create a babelrc file
 - npm i express-graphql
+
+## This project used buildSchema method for creating schemas. There are other method like makeExecutable and graphql. Check docs for more details.
