@@ -1,6 +1,6 @@
 # Graphql
 - npm init --yes
-- npm i --save-dev @babel/core @babel/cli @babel/node @babel/preset-node 
+- npm i --save-dev @babel/core @babel/cli @babel/node @babel/preset-env 
 - npm i express graphql
 - npm i nodemon
 Add "type": "module" to load an ES5 module or create a babelrc file
